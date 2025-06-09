@@ -1,0 +1,23 @@
+public class Laptop {
+    // Instance variables
+    private String modelName;
+    private int ramSize;
+
+    // Parameterized constructor
+    public Laptop(String modelName, int ramSize) {
+        this.modelName = modelName;
+        this.ramSize = ramSize;
+    }
+
+    // Method to display laptop details
+    public void display() {
+        System.out.println("Laptop Model: " + modelName);
+        System.out.println("RAM Size: " + ramSize + " GB");
+    }
+
+    // Main method to test the class
+    public static void main(String[] args) {
+        Laptop myLaptop = new Laptop("Dell Inspiron", 16);
+        myLaptop.display();
+    }
+}
