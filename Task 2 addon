@@ -1,0 +1,58 @@
+class PartTimeEmployee {
+    String name;
+    int hoursWorked;
+    double hourlyRate;
+
+    public PartTimeEmployee(String name, int hoursWorked, double hourlyRate) {
+        this.name = name;
+        this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public void displaySalary() {
+        double salary = hoursWorked * hourlyRate;
+        System.out.println(name + " (Part-Time) earns: ₹" + salary);
+    }
+
+    public static void main(String[] args) {
+        PartTimeEmployee emp2 = new PartTimeEmployee("Sita", 20, 200);
+        emp2.displaySalary();
+    }
+}class PartTimeEmployee {
+    String name;
+    int hoursWorked;
+    double hourlyRate;
+
+    public PartTimeEmployee(String name, int hoursWorked, double hourlyRate) {
+        this.name = name;
+        this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public void displaySalary() {
+        double salary = hoursWorked * hourlyRate;
+        System.out.println(name + " (Part-Time) earns: ₹" + salary);
+    }
+
+    public static void main(String[] args) {
+        PartTimeEmployee emp2 = new PartTimeEmployee("Sita", 20, 200);
+        emp2.displaySalary();
+    }
+}class FullTimeEmployee {
+    String name;
+    double salary;
+
+    public FullTimeEmployee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void displaySalary() {
+        System.out.println(name + " (Full-Time) gets a fixed salary: ₹" + salary);
+    }
+
+    public static void main(String[] args) {
+        FullTimeEmployee emp1 = new FullTimeEmployee("Ravi", 50000);
+        emp1.displaySalary();
+    }
+}
