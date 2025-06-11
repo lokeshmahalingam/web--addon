@@ -1,0 +1,42 @@
+package program;
+
+import java.io.BufferedWriter;
+
+import java.io.FileWriter;
+
+import java.io.IOException;
+
+
+
+public class WriteStringsToFile {
+
+	    public static void main(String[] args) {
+
+	        String[] lines = {"aswin in java", "java in aswin", "aswin in aswin","java in java"};
+
+	        String fileName = "D://Add-on web//gopal.txt";
+
+
+
+	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+
+	            for (String line : lines) {
+
+	                writer.write(line);
+
+	                writer.newLine(); 
+
+	            }
+
+	            System.out.println("Strings written to " + fileName);
+
+	        } catch (IOException e) {
+
+	            e.printStackTrace();
+
+	        }
+
+	    }
+
+	}
+
