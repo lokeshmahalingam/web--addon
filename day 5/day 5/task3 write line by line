@@ -1,0 +1,20 @@
+import java.io.Filrwrite;
+import java.io.IOException;
+
+public class writeToFile{
+    public static void main (Sstring[] args){
+        try{
+            Filewrite mywrite= new FileWrite ("");
+            myWrite.write("aswin in java");
+            myWrite.write("java  in aswin");
+            myWrite.write("java in java");
+            myWrite.write("aswin in aswin");
+            myWrite.close();
+            system.out.println("successfully wrote to the file");
+            
+        }catch(IOExpcetion e){
+            System.out.println("no result");
+            e.printStackTrace();
+        }
+    }
+}
